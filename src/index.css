@@ -1,0 +1,152 @@
+@importar  URL ( 'https://fonts.googleapis.com/css2?family=Nunito&display=swap' );
+
+* {
+    margen :  0 ;
+    relleno :  0 ;
+    tamaño de caja : cuadro de borde;
+}
+
+. fuera de pantalla {
+    posición : absoluta;
+    izquierda :  -10000 px ;
+}
+
+cuerpo {
+    familia de fuentes :  'Nunito' , sans-serif;
+}
+
+botón ,
+seleccionar {
+    fuente : heredar;
+    relleno :  0,25 cm ;
+}
+
+imagen {
+    pantalla : bloque;
+    ancho :  100 % ;
+    altura : automático;
+    borde-radio :  10 px ;
+}
+
+# raíz {
+    /* Reaccionar raíz div */
+    min-altura :  100 vh ;
+    pantalla : flexible;
+    flujo flexible : columna nowrap;
+}
+
+. principal ,
+. encabezado ,
+. pie de página {
+    relleno :  0,25 cm ;
+    margen :  0  1 em ;
+}
+
+. principal {
+    pantalla : flexible;
+    espacio :  1 rem ;
+}
+
+. productos principales {
+  flujo flexible : envoltura de fila;
+  justificar-contenido : espacio-entre;
+}
+
+. carro principal {
+  flujo flexible : columna nowrap;
+}
+
+. encabezado {
+    color de fondo :  #fff ;
+    posición : pegajoso;
+    superior :  0 ;
+    índice z :  1 ;
+    borde inferior :  1 px sólido # 000 ;
+}
+
+. header__title-bar {
+    pantalla : flexible;
+    justificar-contenido : espacio-entre;
+    margen inferior :  0,5 em ;
+}
+
+. header__price-box {
+    alineación de texto : derecha;
+}
+
+. navegación {
+  pantalla : flexible;
+  justificar-contenido : extremo flexible;
+  espacio :  0,5 cm ;
+}
+
+. pie de página {
+    crecimiento flexible :  1 ;
+    pantalla : flexible;
+    flujo flexible : columna nowrap;
+    justificar-contenido : extremo flexible;
+}
+
+. producto {
+    ancho :  90 % ;
+    margen inferior :  1 em ;
+}
+
+. producto__img {
+    ancho máximo :  350 px ;
+}
+
+. carrito {
+    relleno :  0 ;
+    margen superior :  0,5 cm ;
+}
+
+. carrito__artículo {
+    pantalla : cuadrícula;
+    grid-template-columns :  4 fr  3 fr  1 fr  1 fr ;
+    brecha :  0,5 rem ;
+    margen inferior :  0,5 em ;
+}
+
+. carrito__img {
+    pantalla : ninguno;
+    ancho mínimo :  68 px ;
+}
+
+. carrito__seleccionar {
+    altura máxima :  48 px ;
+}
+
+. cart__item-subtotal {
+    pantalla : ninguno;
+    alineación de texto : centro;
+}
+
+. carrito__boton {
+    altura máxima :  48 px ;
+    justificarse a sí mismo : extremo flexible;
+}
+
+. cart__totales {
+    pantalla : flexible;
+    flujo flexible : columna;
+    espacio :  1 em ;
+}
+
+Pantalla @media y ( ancho mínimo :  601 px ) {
+    . producto {
+        ancho :  30 % ;
+    }
+
+    . carrito__artículo {
+        grid-template-columns :  3 fr  15 fr  5 fr  1 fr  8 fr  1 fr ;
+    }
+
+    . carrito_img , . cart__item-subtotal {
+        pantalla : bloque;
+    }
+
+    . carrito__enviar {
+        ancho máximo :  300 px ;
+    }
+}
